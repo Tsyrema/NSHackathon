@@ -13,9 +13,13 @@
 		9B0F71DE1FB69D810068FCB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F71DC1FB69D810068FCB5 /* LaunchScreen.storyboard */; };
 		9B0F71E61FB69E440068FCB5 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71E51FB69E440068FCB5 /* SigninViewController.swift */; };
 		9B0F71E81FB69FAE0068FCB5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71E71FB69FAE0068FCB5 /* SearchViewController.swift */; };
+
+		E6025A811FB6A6F800A76EE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6025A801FB6A6F800A76EE1 /* HomeViewController.swift */; };
+
 		9B0F71EA1FB6A7E70068FCB5 /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71E91FB6A7E70068FCB5 /* Mentor.swift */; };
 		9B0F71EC1FB6AD380068FCB5 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71EB1FB6AD380068FCB5 /* School.swift */; };
 		9B0F71EE1FB6AF6E0068FCB5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71ED1FB6AF6E0068FCB5 /* User.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +31,13 @@
 		9B0F71DF1FB69D810068FCB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B0F71E51FB69E440068FCB5 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		9B0F71E71FB69FAE0068FCB5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+
+		E6025A801FB6A6F800A76EE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+
 		9B0F71E91FB6A7E70068FCB5 /* Mentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
 		9B0F71EB1FB6AD380068FCB5 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		9B0F71ED1FB6AF6E0068FCB5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 			children = (
 				9B0F71D31FB69D810068FCB5 /* AppDelegate.swift */,
 				9B0F71D71FB69D810068FCB5 /* Main.storyboard */,
+				E6025A801FB6A6F800A76EE1 /* HomeViewController.swift */,
 				9B0F71E71FB69FAE0068FCB5 /* SearchViewController.swift */,
 				9B0F71ED1FB6AF6E0068FCB5 /* User.swift */,
 				9B0F71E91FB6A7E70068FCB5 /* Mentor.swift */,
@@ -154,6 +163,7 @@
 				9B0F71E81FB69FAE0068FCB5 /* SearchViewController.swift in Sources */,
 				9B0F71EC1FB6AD380068FCB5 /* School.swift in Sources */,
 				9B0F71E61FB69E440068FCB5 /* SigninViewController.swift in Sources */,
+				E6025A811FB6A6F800A76EE1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
