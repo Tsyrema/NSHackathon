@@ -1,0 +1,23 @@
+{
+  "name": "insighttek",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.6",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "startbootstrap-agency": "^4.0.0-beta"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
