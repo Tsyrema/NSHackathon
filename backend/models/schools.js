@@ -1,6 +1,6 @@
 var mongoose=require('mongoose');
 var Schema = mongoose.Schema;
-
+var searchable = require('mongoose-searchable');
 
 var schoolSchema =  new Schema({
   user: String,
@@ -9,5 +9,7 @@ var schoolSchema =  new Schema({
   zipCode: String,
   phoneNumber: String
 });
+schoolSchema.plugin(searchable);
+
 
 module.exports= mongoose.model('school',schoolSchema);

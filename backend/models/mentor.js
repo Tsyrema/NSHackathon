@@ -1,5 +1,6 @@
 var mongoose= require('mongoose');
 var Schema = mongoose.Schema;
+var searchable = require('mongoose-searchable');
 
 var mentorSchema = new Schema({
   user:String,
@@ -10,4 +11,6 @@ var mentorSchema = new Schema({
 
 
 });
+mentorSchema.plugin(searchable);
+
 module.exports= mongoose.model('mentor',mentorSchema);

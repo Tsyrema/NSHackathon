@@ -9,6 +9,8 @@ var app = express();
 var User=require('./models/user')
 var School = require('./models/schools');
 var mentor = require('./models/mentor');
+var available= require('./models/available');
+var message = require('./models/messages');
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -130,7 +132,49 @@ app.post('/signin', function(req, res) {
   });
 });
 
+app.post('/search',function(req,res){
 
+})
+
+
+app.post('/newavailable',function(req,res){
+    var newAva= new available({
+      username:req.body.username,
+      date:req.body.date
+    })
+});
+
+app.post('/getmessage',function(req,res){
+  message.find({
+    user:req.body.user
+  },function(err,messages){
+    if(err) return res.json('no messages')
+    else {
+      res.json({succes:true,
+      data: messages})
+    }
+  });
+});
+app.post('/newmessage',function(req,res){
+  var newmessage = new message({
+    user:req.body.username,
+    message:req.body.message,
+    to: req.body.to
+  });
+  newmessage.save(function(err) {
+    if (err) {
+      return res.json({
+        success: false,
+        msg: 'there was an error'
+      });
+    }
+    res.json({
+      success: true,
+      msg: 'message sent'
+    });
+  });
+
+});
 
 
 //passport
