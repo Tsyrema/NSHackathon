@@ -62,7 +62,8 @@ class SigninViewController: UIViewController {
                                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                                 let vc = storyboard.instantiateViewController(withIdentifier: "searchVC") as! SearchViewController
                                 vc.userType = (user?.userType)!
-                                let rootVC = self.tabBarController!.viewControllers![2] 
+                                let rootVC = self.tabBarController!.viewControllers![2]
+                                
                                 rootVC.show(vc, sender: nil)
                                 self.tabBarController?.selectedIndex = 2
                             }

@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "195172b35885983c5cfddc3f9c5dffc1"
+build_time: [1510406306, 438035000]
+inputs:
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [1510386415, 0]

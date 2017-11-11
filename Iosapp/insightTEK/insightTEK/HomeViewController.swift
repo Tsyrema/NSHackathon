@@ -16,6 +16,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         homeTableView.delegate = self
         homeTableView.dataSource = self
+        
         // Do any additional setup after loading the view.
     }
 
