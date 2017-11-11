@@ -9,10 +9,18 @@ var app = express();
 var User=require('./models/user')
 var School = require('./models/schools');
 var mentor = require('./models/mentor');
+app.use(passport.initialize());
+app.use(passport.session());
+
+//bodyParser and morgan
+app.use(morgan('dev'));
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
+
 //cors control
 app.use(function (req, res, next) {
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'team10-184315.appspot.com');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     // Request headers you wish to allow
@@ -74,7 +82,7 @@ app.post('/signin', function(req, res) {
     username: req.body.username
   }, function(err, user) {
     if (err) throw err;
-
+    console.log(user);
     if (!user) {
       console.log('Not user ')
       res.status(401).send({
@@ -83,10 +91,9 @@ app.post('/signin', function(req, res) {
       });
     } else {
       // check if password matches
-      user.validPassword(req.body.password, function(err, isMatch) {
-        if (isMatch) {
-          // if user is found and password is right create a token
-          var token = jwt.sign(user, config.secret);
+      if(user.password===req.body.password)
+      {
+          // if user is found and password is right create a toke
           // return the information including token as JSON
           if(user.type==="school"){
             School.findOne({
@@ -119,7 +126,6 @@ app.post('/signin', function(req, res) {
             msg: 'Authentication failed. Wrong password.'
           });
         }
-      });
     }
   });
 });
@@ -128,13 +134,6 @@ app.post('/signin', function(req, res) {
 
 
 //passport
-app.use(passport.initialize());
-app.use(passport.session());
-
-//bodyParser and morgan
-app.use(morgan('dev'));
-app.use(bodyParser.urlencoded());
-app.use(bodyParser.json());
 
 
 
