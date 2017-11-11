@@ -26,23 +26,23 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-6cT-re-dii.nib</key>
 		<data>
-		hV1RNS2Swy8HG+9HOhRZ33tIXIs=
+		SvBkyikR7fMHOpZEwH2ytoDAipg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UOU-fH-MJP-view-dmY-Cg-yai.nib</key>
 		<data>
-		dBXfnSHdN0WSSrzDqdbC4ZPaf60=
+		zTHyBuIN9agyW+HDdTLNjZ3sdr4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/hTW-wn-GlE-view-aHc-oW-ps1.nib</key>
 		<data>
-		sX1uGtZAykyF44PlIRVsLkzy+4Q=
+		SBeuRGwtcbI3kA1mRI3H8rG9m6E=
 		</data>
 		<key>Base.lproj/Main.storyboardc/lH0-yM-suD-view-qu3-Xk-uEd.nib</key>
 		<data>
-		0b+geL3GLuqXExZNaGlX+Ae3fzI=
+		GVNtJDD6vCekSG32lDj7rhzttjE=
 		</data>
 		<key>Base.lproj/Main.storyboardc/searchVC.nib</key>
 		<data>
-		DpgQK7/TaANkWB5MN0ImhAL0kcM=
+		mysReiBG1s+ZF2Qh7jLVuDTG3uI=
 		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
@@ -194,55 +194,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hV1RNS2Swy8HG+9HOhRZ33tIXIs=
+			SvBkyikR7fMHOpZEwH2ytoDAipg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lk5o1YQx5+m2CLMVOd/ZX6YgSI3S0wBUTl0EOYrbCNo=
+			2K5NOxDl+pbGMoEogMSi/HZyxBBorJq1RJukVJYaLfs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UOU-fH-MJP-view-dmY-Cg-yai.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dBXfnSHdN0WSSrzDqdbC4ZPaf60=
+			zTHyBuIN9agyW+HDdTLNjZ3sdr4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Af8yg9RDMMi3t85W8MfsbK0U2d96FvHQkV8yrlXKWDQ=
+			Qnr68KI5RXfmgvPQ11Gcpx28SnP+3w3QOSPPS0vmbBY=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/hTW-wn-GlE-view-aHc-oW-ps1.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sX1uGtZAykyF44PlIRVsLkzy+4Q=
+			SBeuRGwtcbI3kA1mRI3H8rG9m6E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z68+JE/c6cN2RqCdRGozKWBpkDuySC4ePLVE25E/+Qg=
+			qyMnGpGAcLerU1dBMu3YJjW+EOk8yPThhjoEICZ9hCw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/lH0-yM-suD-view-qu3-Xk-uEd.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0b+geL3GLuqXExZNaGlX+Ae3fzI=
+			GVNtJDD6vCekSG32lDj7rhzttjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Es/49QEy9XAj4RiJRsfTnPGDTZKkPvlxnYe6033oypY=
+			RyQm9leJIwmZY7Z5HH1VtilEdid3rsX0m7md7H/oseA=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/searchVC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DpgQK7/TaANkWB5MN0ImhAL0kcM=
+			mysReiBG1s+ZF2Qh7jLVuDTG3uI=
 			</data>
 			<key>hash2</key>
 			<data>
-			6HjXCxZ1tOWpW0RS4ronI0eSsSBzW9CF3FHmV8TF7Yw=
+			h9aWB9Xbnt9Aw97u1VqmX9Fg9RzYcvJ9ekEtf6RXQLA=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>

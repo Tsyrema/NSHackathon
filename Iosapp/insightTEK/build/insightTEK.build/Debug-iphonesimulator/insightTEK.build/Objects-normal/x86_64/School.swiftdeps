@@ -17,7 +17,6 @@ depends-member:
 - ["10insightTEK6SchoolC", "schoolCity"]
 - ["10insightTEK6SchoolC", "schoolId"]
 - ["10insightTEK6SchoolC", "schoolName"]
-- ["10insightTEK6SchoolC", "schoolZip"]
 depends-nominal:
 - "10insightTEK6SchoolC"
 depends-dynamic-lookup:
@@ -43,4 +42,4 @@ depends-external:
 - "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/build/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
 - "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "ebfc428380970eb35d3666babc3594de"
+interface-hash: "8021561bc4f892199e9c48fa50b32956"

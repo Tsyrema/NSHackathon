@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "Alamofire"
 - !private "AnyObject"
+- !private "AssignmentPrecedence"
 - !private "CastingPrecedence"
 - !private "Int"
 - !private "JSON"
@@ -18,7 +19,6 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "URL"
 - "Void"
-- !private "print"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["s23BidirectionalCollectionP", "append"]
@@ -99,7 +99,6 @@ depends-member:
 - ["10insightTEK11MentorStoreC", "deinit"]
 - ["10insightTEK11MentorStoreC", "getMentor"]
 - ["10insightTEK11MentorStoreC", "init"]
-- !private ["10insightTEK11MentorStoreC", "print"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["So8NSCodingP", "init"]

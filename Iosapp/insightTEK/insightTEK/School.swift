@@ -13,13 +13,13 @@ class School {
     let schoolId: String
     let schoolName: String
     let schoolCity: String
-    let schoolZip: String
+//    let schoolZip: String
     
-    init(schoolId: String, schoolName: String, schoolCity: String, schoolZip: String) {
+    init(schoolId: String, schoolName: String, schoolCity: String) {
         self.schoolId = schoolId
         self.schoolName = schoolName
         self.schoolCity = schoolCity
-        self.schoolZip = schoolZip
+//        self.schoolZip = schoolZip
     }
     
 }
