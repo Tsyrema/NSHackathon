@@ -34,6 +34,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="zW9-dT-VT6" firstAttribute="bottom" secondItem="O1f-bG-iDk" secondAttribute="bottom" id="3xz-t2-M92"/>
                             <constraint firstItem="zW9-dT-VT6" firstAttribute="top" secondItem="O1f-bG-iDk" secondAttribute="top" id="Ad4-na-ODd"/>
@@ -41,13 +42,21 @@
                             <constraint firstItem="zW9-dT-VT6" firstAttribute="trailing" secondItem="O1f-bG-iDk" secondAttribute="trailing" id="nhm-ot-sHo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1f-bG-iDk"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Urg-Tq-8F3" appends="YES" id="tL4-Jk-apq"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="RkC-sd-5iU"/>
                     <connections>
-                        <outlet property="mentorTableView" destination="zW9-dT-VT6" id="Nrt-PN-wgQ"/>
+                        <outlet property="resultsTableView" destination="zW9-dT-VT6" id="UFn-q7-Wh1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ul-LL-D0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Urg-Tq-8F3">
+                    <connections>
+                        <action selector="dismissViewOnTap:" destination="lH0-yM-suD" id="vyd-Q1-h14"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-586" y="-538"/>
         </scene>
