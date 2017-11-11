@@ -8,44 +8,36 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class MentorStore {
     
-//    class func getData(APIEndPoint: String, callback: @escaping ([Taco]?) -> Void){
-//        let url = URL(string: APIEndPoint)
-//
-//        var tacoLayersToReturn: [Taco]?
-//        Alamofire.request(url!).responseJSON { (dataResponse) in
-//            if let jsonData = dataResponse.data {
-//                let swiftyJSON = JSON(data: jsonData)
-    
-    func getMentor(APIEndPoint: String, completion: @escaping (Mentor) -> Void) {
+    func getMentor(APIEndPoint: String, parameters: [String:Any], completion: @escaping ([Mentor]) -> Void) {
         
-        let url = URL(String: APIEndPoint)
-        var mentor: Mentor?
-        
-        Alamofire.request(url!).responseJSON { (dataResponse) in
-            if let jsonData = dataResponse.data {
-               let dict = JSON(data: jsonData)
-                
-                if let mentorId = dict["username"] as? String,
-                    let mentorName = dict["first"] as? String,
-                    let mentorAge = dict["age"] as? Int,
-                    let mentorCity = dict["mentorCity"] as? String,
-                    let mentorCompany = dict["company"] as? String,
-                    let mentorDescription = dict["description"] as? String {
-                    
-                    let mentorObject = Mentor(mentorId: mentorId, mentorName: mentorName, mentorAge: mentorAge, mentorCity: mentorCity, mentorCompany: mentorCompany, mentorDescription: mentorDescription)
-                    mentor = mentorObject
-                    
-                }
-                if let mentor = mentor {
-                    completion(mentor)
+        let url = URL(string: APIEndPoint)
+        //var mentor: Mentor?
+        var mentors: [Mentor]!
+        Alamofire.request("\(url!)/search", method: .post, parameters: parameters).responseJSON { (dataResponse) in
+            if let jsonData = dataResponse.data,
+                let dict = try? JSON(data: jsonData).dictionaryObject,
+                let mentorsArr = dict!["data"] as? [AnyObject]  {
+                for mentorDict in mentorsArr {
+                    if let mentorId = mentorDict["user"] as? String,
+                        let mentorName = mentorDict["first"] as? String,
+                        let mentorAge = mentorDict["age"] as? Int,
+                        let mentorCity = mentorDict["mentorCity"] as? String,
+                        let mentorCompany = mentorDict["company"] as? String,
+                        let mentorDescription = mentorDict["description"] as? String {
+                        
+                        let mentorObject = Mentor(mentorId: mentorId, mentorName: mentorName, mentorAge: mentorAge, mentorCity: mentorCity, mentorCompany: mentorCompany, mentorDescription: mentorDescription)
+                        mentors.append(mentorObject)
+                    }
                 }
             }
-            
         }
-        
+        if let mentors = mentors {
+            completion(mentors)
+        }
         
     }
     

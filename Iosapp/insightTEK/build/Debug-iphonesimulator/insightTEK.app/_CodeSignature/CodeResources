@@ -22,19 +22,43 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-6cT-re-dii.nib</key>
 		<data>
-		3PqX+acQlbHYEQ5LDkWftslLP54=
+		rpN3haM9GgCU1y+CXG7fiAch++I=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UOU-fH-MJP-view-dmY-Cg-yai.nib</key>
 		<data>
-		2lvawuGySoQV8aevvYv3TzG34xc=
+		BNwOE2RrovKAkQt3cknX1B8K/6w=
 		</data>
 		<key>Base.lproj/Main.storyboardc/hTW-wn-GlE-view-aHc-oW-ps1.nib</key>
 		<data>
-		K8QYJhaPh1Fy1MKJSQgAC7uwNG0=
+		7ldMcydDOR29cOkjHlMchrrzS7c=
 		</data>
 		<key>Base.lproj/Main.storyboardc/lH0-yM-suD-view-qu3-Xk-uEd.nib</key>
 		<data>
-		g62bNSD+NXpil7hU+xKtop2pfF8=
+		4Baz8wW5wq+PGfb7bv7iMIXG+gY=
+		</data>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<data>
+		KtZ6aDi7DU9StBVGnar/U6utHP4=
+		</data>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<data>
+		1dJZ3eU0cVWcFyWTTpQexAYYvSY=
+		</data>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<data>
+		Nw7eZGbScJjjGiYiouP9AreyBJ4=
+		</data>
+		<key>Frameworks/SwiftyJSON.framework/Info.plist</key>
+		<data>
+		hQ2bptFVQQSMS+27C985Jeye++Y=
+		</data>
+		<key>Frameworks/SwiftyJSON.framework/SwiftyJSON</key>
+		<data>
+		+n4Lc8WuyhMeLqzS1lcUGabaocA=
+		</data>
+		<key>Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>
+		<data>
+		HLkSuu3SHaZwtn4zeu/jIT8/1hA=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -90,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Y0IA0//fUq0ngIJ+Jh+b8r5M7as=
+		nW41Pkz6iEb05AgDdcNAxDVlIl0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -151,44 +175,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3PqX+acQlbHYEQ5LDkWftslLP54=
+			rpN3haM9GgCU1y+CXG7fiAch++I=
 			</data>
 			<key>hash2</key>
 			<data>
-			oILHD761k4Gd1a3p5NbsTJtvMLZ7xWji/zq7AM5yInA=
+			rdHvUG3yxCK6XL1ZnO9dQr7GILvCyF7BZbCN14nXcnE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UOU-fH-MJP-view-dmY-Cg-yai.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2lvawuGySoQV8aevvYv3TzG34xc=
+			BNwOE2RrovKAkQt3cknX1B8K/6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			KwMa2/XcIyO3bhLBSdaMo0EYW6gt04PuM96LoEgjk9I=
+			7J6xvo/cFLWScQEpknwhvvdS8lffZd09/uELwRXFQ4w=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/hTW-wn-GlE-view-aHc-oW-ps1.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K8QYJhaPh1Fy1MKJSQgAC7uwNG0=
+			7ldMcydDOR29cOkjHlMchrrzS7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			xnKPoOOznlW4LJ7ZjERTAorZ4RRBoSJiPuJ/ANU4yzk=
+			sRI+xtS5Gnr24mILuraZ2z2nuc1B2NBQ4Gz5aok67Is=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/lH0-yM-suD-view-qu3-Xk-uEd.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g62bNSD+NXpil7hU+xKtop2pfF8=
+			4Baz8wW5wq+PGfb7bv7iMIXG+gY=
 			</data>
 			<key>hash2</key>
 			<data>
-			xuJgZJZlKXVo4URW0zL9jdjdw40K7+Z3YTgwfGGqStc=
+			ycT1FrPXBBMfgOlM3ehH3Xwks/jRLEFMjCH6kL22unE=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KtZ6aDi7DU9StBVGnar/U6utHP4=
+			</data>
+			<key>hash2</key>
+			<data>
+			uvbgEpYy9h/hGV7LQwNVXa/NE9FllR4lY19y1kUDj6o=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1dJZ3eU0cVWcFyWTTpQexAYYvSY=
+			</data>
+			<key>hash2</key>
+			<data>
+			UjMhE6QXxc313hk1UEa/sz+9E/lmqzKPpUR0uTb0ZK0=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Nw7eZGbScJjjGiYiouP9AreyBJ4=
+			</data>
+			<key>hash2</key>
+			<data>
+			juqfRqBNJHEeSNKpDRjr1Xq+9cVQoUwoiyJJhcR6E0I=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftyJSON.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hQ2bptFVQQSMS+27C985Jeye++Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			Y66pwRA3HlcNmA+DaF9wCuHTchIvj0O+goRPLT8cc7M=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftyJSON.framework/SwiftyJSON</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+n4Lc8WuyhMeLqzS1lcUGabaocA=
+			</data>
+			<key>hash2</key>
+			<data>
+			Etavdv9PkP7r2wKeh1az9Eax5OZA4NsPhDVp22C00mY=
+			</data>
+		</dict>
+		<key>Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HLkSuu3SHaZwtn4zeu/jIT8/1hA=
+			</data>
+			<key>hash2</key>
+			<data>
+			rvnxV2mUwDkpiYveDf91VvOiobyspQGAJ23vt3GT3c0=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>

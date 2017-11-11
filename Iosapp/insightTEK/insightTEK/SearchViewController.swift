@@ -19,6 +19,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var searchedMentors: [Mentor] = []
     var searchedSchools: [School] = []
     
+    let mentor = MentorStore()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         resultsTableView.dataSource = self
         resultsTableView.delegate = self
         createSearchBar()
+        loadResults()
 
     }
     
@@ -38,12 +41,19 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func loadResults() {
-        if userType == "Mentor" {
+//        if userType == "Mentor" {
+            let MentorEndPoint = "http://localhost:8080"
+        let parameters = ["type":"school","field":""]
+
+        mentor.getMentor(APIEndPoint: MentorEndPoint, parameters: parameters, completion: { (mentors) in
             
-        }
-        else {
-            
-        }
+            print(mentors)
+            self.resultsTableView.reloadData()
+            } )
+//        }
+//        else {
+//
+//        }
     }
     
     @IBAction func dismissViewOnTap(_ sender: UITapGestureRecognizer) {

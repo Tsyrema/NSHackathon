@@ -230,6 +230,7 @@ SWIFT_CLASS("_TtC10insightTEK20SigninViewController")
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified passwordTextField;
 - (void)viewDidLoad;
 - (IBAction)signinTapped:(UIButton * _Nonnull)sender;
+- (IBAction)tapToDismiss:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -92,7 +92,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="04t-ol-NET"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="V5u-nP-Gzt" appends="YES" id="Zdi-N9-0AN"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="JFh-6N-vfA"/>
                     <connections>
@@ -101,6 +105,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1G-Un-nCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="V5u-nP-Gzt">
+                    <connections>
+                        <action selector="tapToDismiss:" destination="hTW-wn-GlE" id="0rU-pb-8Jt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-586" y="141"/>
         </scene>
@@ -156,7 +165,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUt-xi-tHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1424" y="141.22938530734635"/>
+            <point key="canvasLocation" x="-1522" y="322"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="VqO-Zb-8Rq">
