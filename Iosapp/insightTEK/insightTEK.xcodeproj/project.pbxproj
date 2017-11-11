@@ -19,6 +19,7 @@
 		9B0F71EE1FB6AF6E0068FCB5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71ED1FB6AF6E0068FCB5 /* User.swift */; };
 		9B0F71F01FB6D5330068FCB5 /* MentorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71EF1FB6D5330068FCB5 /* MentorStore.swift */; };
 		9B0F71F21FB6DD7E0068FCB5 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71F11FB6DD7E0068FCB5 /* UserStore.swift */; };
+		9B0F71F41FB704C60068FCB5 /* SchoolStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71F31FB704C60068FCB5 /* SchoolStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9B0F71ED1FB6AF6E0068FCB5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B0F71EF1FB6D5330068FCB5 /* MentorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorStore.swift; sourceTree = "<group>"; };
 		9B0F71F11FB6DD7E0068FCB5 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		9B0F71F31FB704C60068FCB5 /* SchoolStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				9B0F71D71FB69D810068FCB5 /* Main.storyboard */,
 				9B0F71E71FB69FAE0068FCB5 /* SearchViewController.swift */,
 				9B0F71F11FB6DD7E0068FCB5 /* UserStore.swift */,
+				9B0F71F31FB704C60068FCB5 /* SchoolStore.swift */,
 				9B0F71ED1FB6AF6E0068FCB5 /* User.swift */,
 				9B0F71E91FB6A7E70068FCB5 /* Mentor.swift */,
 				9B0F71EB1FB6AD380068FCB5 /* School.swift */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B0F71EA1FB6A7E70068FCB5 /* Mentor.swift in Sources */,
+				9B0F71F41FB704C60068FCB5 /* SchoolStore.swift in Sources */,
 				9B0F71D41FB69D810068FCB5 /* AppDelegate.swift in Sources */,
 				9B0F71EE1FB6AF6E0068FCB5 /* User.swift in Sources */,
 				9B0F71F01FB6D5330068FCB5 /* MentorStore.swift in Sources */,

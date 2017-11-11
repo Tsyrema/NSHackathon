@@ -13,7 +13,7 @@
         <!--Search View Controller-->
         <scene sceneID="UZP-Ul-nP9">
             <objects>
-                <viewController id="lH0-yM-suD" customClass="SearchViewController" customModule="insightTEK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchVC" id="lH0-yM-suD" customClass="SearchViewController" customModule="insightTEK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qu3-Xk-uEd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

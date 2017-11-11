@@ -15,7 +15,6 @@ class MentorStore {
     func getMentor(APIEndPoint: String, parameters: [String:Any], completion: @escaping ([Mentor]) -> Void) {
         
         let url = URL(string: APIEndPoint)
-        //var mentor: Mentor?
         var mentors: [Mentor]!
         Alamofire.request("\(url!)/search", method: .post, parameters: parameters).responseJSON { (dataResponse) in
             if let jsonData = dataResponse.data,

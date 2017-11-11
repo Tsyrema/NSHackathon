@@ -17,8 +17,6 @@ class SigninViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     @IBAction func signinTapped(_ sender: UIButton) {
@@ -28,8 +26,6 @@ class SigninViewController: UIViewController {
                 dump(user)
             })
         }
-        
-        
     }
     
     @IBAction func tapToDismiss(_ sender: UITapGestureRecognizer) {
@@ -43,6 +39,16 @@ class SigninViewController: UIViewController {
         var user: User?
         let url = URL(string: APIEndPoint)
         
+        /*
+        let storyboard = UIStoryboard(name: "Supporting", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("InviteFriendsViewController") as! InviteFriendsViewController
+        
+        var rootVC = self.tabBarController!.viewControllers![2] as! UIViewController
+        rootVC.showViewController(vc, sender: nil)
+        
+        self.tabBarController?.selectedIndex = 2
+    }
+ */
         Alamofire.request("\(url!)/signin", method: .post, parameters: dict).responseJSON { (dataResponse) in
             if let jsonData = dataResponse.data,
                 let dict = try? JSON(data: jsonData).dictionaryObject {
@@ -51,17 +57,21 @@ class SigninViewController: UIViewController {
                         if let userDict = dict!["data"] as? [String:Any] {
                             print(userDict)
                             if let username = userDict["user"] as? String,
-                                let userType = userDict["type"] as? String {
+                                let userType = dict!["type"] as? String {
                                 user = User(username: username, userType: userType)
-                                print(user)
+                                
+                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                let vc = storyboard.instantiateViewController(withIdentifier: "searchVC") as! SearchViewController
+                                vc.userType = (user?.userType)!
+                                let rootVC = self.tabBarController!.viewControllers![2] 
+                                rootVC.show(vc, sender: nil)
+                                self.tabBarController?.selectedIndex = 2
                             }
                         }
                     }
                     else {
                         print("wrong credentials")
                     }
-                    
-                    
                 }
                 
             }

@@ -211,6 +211,7 @@ SWIFT_CLASS("_TtC10insightTEK20SearchViewController")
 @interface SearchViewController : UIViewController <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified resultsTableView;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (IBAction)dismissViewOnTap:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
 - (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
