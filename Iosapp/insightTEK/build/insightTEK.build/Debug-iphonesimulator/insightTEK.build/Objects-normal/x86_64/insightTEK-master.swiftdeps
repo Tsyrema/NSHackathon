@@ -1,9 +1,10 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "3ffad089d0b0011a8393920e2300f2b5"
-build_time: [1510415727, 682254000]
+build_time: [1510416088, 605629000]
 inputs:
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/ResultTableViewCell.swift": [1510413018, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/Mentor.swift": [1510384764, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/HomeTableViewController.swift": [1510416036, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SchoolStore.swift": [1510402375, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/AppDelegate.swift": [1510368769, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/User.swift": [1510382497, 0]
@@ -11,5 +12,4 @@ inputs:
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SearchViewController.swift": [1510415581, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/School.swift": [1510401805, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/UserStore.swift": [1510401547, 0]
-  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SigninViewController.swift": [1510415727, 0]
-  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/HomeViewController.swift": [1510406738, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SigninViewController.swift": [1510416088, 0]

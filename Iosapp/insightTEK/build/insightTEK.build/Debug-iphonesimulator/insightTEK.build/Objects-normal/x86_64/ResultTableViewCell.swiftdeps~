@@ -8,12 +8,14 @@ provides-member:
 provides-dynamic-lookup:
 - "awakeFromNib"
 - "descrpLabel"
+- "mainImageView"
 - "setSelected"
 - "subtitleLabel"
 - "titleLabel"
 depends-top-level:
 - "Bool"
 - "ResultTableViewCell"
+- "UIImageView"
 - "UILabel"
 - "UITableViewCell"
 depends-member:
@@ -46,10 +48,12 @@ depends-member:
 - !private ["So8NSCodingP", "setSelected"]
 - ["So8NSCodingP", ""]
 - ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "awakeFromNib"]
 - ["So8NSObjectC", "descrpLabel"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "mainImageView"]
 - ["So8NSObjectC", "setSelected"]
 - ["So8NSObjectC", "subtitleLabel"]
 - ["So8NSObjectC", "titleLabel"]
@@ -58,11 +62,13 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "setSelected"]
 - ["So16NSObjectProtocolP", ""]
 - ["10insightTEK19ResultTableViewCellC", "Bool"]
+- ["10insightTEK19ResultTableViewCellC", "UIImageView"]
 - ["10insightTEK19ResultTableViewCellC", "UILabel"]
 - ["10insightTEK19ResultTableViewCellC", "awakeFromNib"]
 - ["10insightTEK19ResultTableViewCellC", "deinit"]
 - ["10insightTEK19ResultTableViewCellC", "descrpLabel"]
 - ["10insightTEK19ResultTableViewCellC", "init"]
+- ["10insightTEK19ResultTableViewCellC", "mainImageView"]
 - ["10insightTEK19ResultTableViewCellC", "setSelected"]
 - ["10insightTEK19ResultTableViewCellC", "subtitleLabel"]
 - ["10insightTEK19ResultTableViewCellC", "titleLabel"]
@@ -103,10 +109,12 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "awakeFromNib"]
 - ["So11UIResponderC", "descrpLabel"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "mainImageView"]
 - ["So11UIResponderC", "setSelected"]
 - ["So11UIResponderC", "subtitleLabel"]
 - ["So11UIResponderC", "titleLabel"]
@@ -115,10 +123,12 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So15UITableViewCellC", "Bool"]
+- ["So15UITableViewCellC", "UIImageView"]
 - ["So15UITableViewCellC", "UILabel"]
 - ["So15UITableViewCellC", "awakeFromNib"]
 - ["So15UITableViewCellC", "descrpLabel"]
 - ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "mainImageView"]
 - ["So15UITableViewCellC", "setSelected"]
 - ["So15UITableViewCellC", "subtitleLabel"]
 - ["So15UITableViewCellC", "titleLabel"]
@@ -128,10 +138,12 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "setSelected"]
 - ["So18UITraitEnvironmentP", ""]
 - ["So6UIViewC", "Bool"]
+- ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
 - ["So6UIViewC", "awakeFromNib"]
 - ["So6UIViewC", "descrpLabel"]
 - ["So6UIViewC", "init"]
+- ["So6UIViewC", "mainImageView"]
 - ["So6UIViewC", "setSelected"]
 - ["So6UIViewC", "subtitleLabel"]
 - ["So6UIViewC", "titleLabel"]
@@ -193,4 +205,4 @@ depends-external:
 - "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/build/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
 - "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/build/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
-interface-hash: "69a5d122ad08222f2c9e7ba66861b3f0"
+interface-hash: "1706610099679c28d6d08d7550f40a4e"

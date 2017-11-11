@@ -34,7 +34,9 @@ depends-top-level:
 - "Void"
 - !private "print"
 depends-member:
+- !private ["Sa", "subscript"]
 - !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "resignFirstResponder"]
 - !private ["So15CALayerDelegateP", "text"]
@@ -50,9 +52,13 @@ depends-member:
 - !private ["s7CVarArgP", "passwordTextField"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "resignFirstResponder"]
+- !private ["s7CVarArgP", "selectedIndex"]
+- !private ["s7CVarArgP", "show"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "tabBarController"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "userType"]
+- !private ["s7CVarArgP", "viewControllers"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "dictionaryObject"]
@@ -75,9 +81,13 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "responseJSON"]
+- !private ["s28CustomDebugStringConvertibleP", "selectedIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "show"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tabBarController"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "userType"]
+- !private ["s28CustomDebugStringConvertibleP", "viewControllers"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -101,9 +111,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "responseJSON"]
+- !private ["s23CustomStringConvertibleP", "selectedIndex"]
+- !private ["s23CustomStringConvertibleP", "show"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "tabBarController"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "userType"]
+- !private ["s23CustomStringConvertibleP", "viewControllers"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["9Alamofire11DataRequestC", "responseJSON"]
@@ -130,12 +144,17 @@ depends-member:
 - !private ["s9EquatableP", "post"]
 - !private ["s9EquatableP", "print"]
 - !private ["s9EquatableP", "resignFirstResponder"]
+- !private ["s9EquatableP", "selectedIndex"]
+- !private ["s9EquatableP", "show"]
+- !private ["s9EquatableP", "tabBarController"]
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "userType"]
+- !private ["s9EquatableP", "viewControllers"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "dictionaryObject"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s27ExpressibleByBooleanLiteralP", "dictionaryObject"]
 - !private ["s27ExpressibleByBooleanLiteralP", "init"]
@@ -169,8 +188,12 @@ depends-member:
 - !private ["s8HashableP", "post"]
 - !private ["s8HashableP", "print"]
 - !private ["s8HashableP", "resignFirstResponder"]
+- !private ["s8HashableP", "selectedIndex"]
+- !private ["s8HashableP", "show"]
+- !private ["s8HashableP", "tabBarController"]
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "userType"]
+- !private ["s8HashableP", "viewControllers"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", ""]
 - !private ["10SwiftyJSON0B0V", "dictionaryObject"]
@@ -179,6 +202,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "Alamofire"]
 - !private ["So8NSCodingP", "JSON"]
 - !private ["So8NSCodingP", "UIStoryboard"]
@@ -190,8 +214,12 @@ depends-member:
 - !private ["So8NSCodingP", "passwordTextField"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "resignFirstResponder"]
+- !private ["So8NSCodingP", "selectedIndex"]
+- !private ["So8NSCodingP", "show"]
+- !private ["So8NSCodingP", "tabBarController"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "userType"]
+- !private ["So8NSCodingP", "viewControllers"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "init"]
@@ -205,7 +233,11 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "login"]
 - !private ["So26NSExtensionRequestHandlingP", "passwordTextField"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "selectedIndex"]
+- !private ["So26NSExtensionRequestHandlingP", "show"]
+- !private ["So26NSExtensionRequestHandlingP", "tabBarController"]
 - !private ["So26NSExtensionRequestHandlingP", "userType"]
+- !private ["So26NSExtensionRequestHandlingP", "viewControllers"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So21NSItemProviderReadingP", "init"]
@@ -230,10 +262,14 @@ depends-member:
 - ["So8NSObjectC", "passwordTextField"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
+- !private ["So8NSObjectC", "selectedIndex"]
+- !private ["So8NSObjectC", "show"]
 - ["So8NSObjectC", "signinTapped"]
+- !private ["So8NSObjectC", "tabBarController"]
 - ["So8NSObjectC", "tapToDismiss"]
 - !private ["So8NSObjectC", "text"]
 - !private ["So8NSObjectC", "userType"]
+- !private ["So8NSObjectC", "viewControllers"]
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So16NSObjectProtocolP", "Alamofire"]
 - !private ["So16NSObjectProtocolP", "JSON"]
@@ -247,13 +283,19 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "passwordTextField"]
 - !private ["So16NSObjectProtocolP", "print"]
 - !private ["So16NSObjectProtocolP", "resignFirstResponder"]
+- !private ["So16NSObjectProtocolP", "selectedIndex"]
+- !private ["So16NSObjectProtocolP", "show"]
+- !private ["So16NSObjectProtocolP", "tabBarController"]
 - !private ["So16NSObjectProtocolP", "text"]
 - !private ["So16NSObjectProtocolP", "userType"]
+- !private ["So16NSObjectProtocolP", "viewControllers"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
 - !private ["s16RawRepresentableP", "dictionaryObject"]
 - !private ["s16RawRepresentableP", "init"]
 - !private ["s16RawRepresentableP", "post"]
@@ -283,6 +325,7 @@ depends-member:
 - ["10insightTEK20SigninViewControllerC", "passwordTextField"]
 - !private ["10insightTEK20SigninViewControllerC", "print"]
 - ["10insightTEK20SigninViewControllerC", "signinTapped"]
+- !private ["10insightTEK20SigninViewControllerC", "tabBarController"]
 - ["10insightTEK20SigninViewControllerC", "tapToDismiss"]
 - ["10insightTEK20SigninViewControllerC", "viewDidLoad"]
 - !private ["SS", "init"]
@@ -304,8 +347,12 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "passwordTextField"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
+- !private ["So21UIAppearanceContainerP", "selectedIndex"]
+- !private ["So21UIAppearanceContainerP", "show"]
+- !private ["So21UIAppearanceContainerP", "tabBarController"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "userType"]
+- !private ["So21UIAppearanceContainerP", "viewControllers"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So24UIBarPositioningDelegateP", "userType"]
@@ -319,7 +366,11 @@ depends-member:
 - !private ["So18UIContentContainerP", "login"]
 - !private ["So18UIContentContainerP", "passwordTextField"]
 - !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "selectedIndex"]
+- !private ["So18UIContentContainerP", "show"]
+- !private ["So18UIContentContainerP", "tabBarController"]
 - !private ["So18UIContentContainerP", "userType"]
+- !private ["So18UIContentContainerP", "viewControllers"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "resignFirstResponder"]
@@ -341,8 +392,12 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "passwordTextField"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
+- !private ["So18UIFocusEnvironmentP", "selectedIndex"]
+- !private ["So18UIFocusEnvironmentP", "show"]
+- !private ["So18UIFocusEnvironmentP", "tabBarController"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "userType"]
+- !private ["So18UIFocusEnvironmentP", "viewControllers"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "resignFirstResponder"]
@@ -360,8 +415,12 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "passwordTextField"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
+- !private ["So30UIPasteConfigurationSupportingP", "selectedIndex"]
+- !private ["So30UIPasteConfigurationSupportingP", "show"]
+- !private ["So30UIPasteConfigurationSupportingP", "tabBarController"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "userType"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewControllers"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So11UIResponderC", "Alamofire"]
@@ -382,10 +441,14 @@ depends-member:
 - ["So11UIResponderC", "passwordTextField"]
 - !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "resignFirstResponder"]
+- !private ["So11UIResponderC", "selectedIndex"]
+- !private ["So11UIResponderC", "show"]
 - ["So11UIResponderC", "signinTapped"]
+- !private ["So11UIResponderC", "tabBarController"]
 - ["So11UIResponderC", "tapToDismiss"]
 - !private ["So11UIResponderC", "text"]
 - !private ["So11UIResponderC", "userType"]
+- !private ["So11UIResponderC", "viewControllers"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "Alamofire"]
 - !private ["So30UIResponderStandardEditActionsP", "JSON"]
@@ -398,8 +461,12 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "passwordTextField"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
+- !private ["So30UIResponderStandardEditActionsP", "selectedIndex"]
+- !private ["So30UIResponderStandardEditActionsP", "show"]
+- !private ["So30UIResponderStandardEditActionsP", "tabBarController"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "userType"]
+- !private ["So30UIResponderStandardEditActionsP", "viewControllers"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So20UIScrollViewDelegateP", "userType"]
@@ -414,11 +481,19 @@ depends-member:
 - !private ["So16UIStateRestoringP", "login"]
 - !private ["So16UIStateRestoringP", "passwordTextField"]
 - !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "selectedIndex"]
+- !private ["So16UIStateRestoringP", "show"]
+- !private ["So16UIStateRestoringP", "tabBarController"]
 - !private ["So16UIStateRestoringP", "userType"]
+- !private ["So16UIStateRestoringP", "viewControllers"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So12UIStoryboardC", "init"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So18UITabBarControllerC", "selectedIndex"]
+- !private ["So18UITabBarControllerC", "viewControllers"]
+- !private ["So16UITabBarDelegateP", "selectedIndex"]
+- !private ["So16UITabBarDelegateP", "viewControllers"]
 - !private ["So21UITableViewDataSourceP", "userType"]
 - !private ["So19UITableViewDelegateP", "userType"]
 - !private ["So15UITextDraggableP", "resignFirstResponder"]
@@ -444,8 +519,12 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "passwordTextField"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
+- !private ["So18UITraitEnvironmentP", "selectedIndex"]
+- !private ["So18UITraitEnvironmentP", "show"]
+- !private ["So18UITraitEnvironmentP", "tabBarController"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "userType"]
+- !private ["So18UITraitEnvironmentP", "viewControllers"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "resignFirstResponder"]
@@ -467,18 +546,25 @@ depends-member:
 - ["So16UIViewControllerC", "login"]
 - ["So16UIViewControllerC", "passwordTextField"]
 - !private ["So16UIViewControllerC", "print"]
+- !private ["So16UIViewControllerC", "selectedIndex"]
+- !private ["So16UIViewControllerC", "show"]
 - ["So16UIViewControllerC", "signinTapped"]
+- !private ["So16UIViewControllerC", "tabBarController"]
 - ["So16UIViewControllerC", "tapToDismiss"]
 - !private ["So16UIViewControllerC", "userType"]
+- !private ["So16UIViewControllerC", "viewControllers"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", ""]
 - !private ["10Foundation3URLV", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["10insightTEK4UserC", "init"]
 - !private ["10insightTEK4UserC", "userType"]
+- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -505,16 +591,24 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "passwordTextField"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedIndex"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "show"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBarController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllers"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
@@ -546,6 +640,7 @@ depends-nominal:
 - !private "10SwiftyJSON17JSONSubscriptTypeP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
@@ -556,6 +651,7 @@ depends-nominal:
 - "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
@@ -587,6 +683,8 @@ depends-nominal:
 - !private "So19UISearchBarDelegateP"
 - "So16UIStateRestoringP"
 - !private "So12UIStoryboardC"
+- !private "So18UITabBarControllerC"
+- !private "So16UITabBarDelegateP"
 - !private "So21UITableViewDataSourceP"
 - !private "So19UITableViewDelegateP"
 - !private "So15UITextDraggableP"
@@ -601,8 +699,10 @@ depends-nominal:
 - !private "10Foundation3URLV"
 - !private "9Alamofire14URLConvertibleP"
 - !private "10insightTEK4UserC"
+- !private "s14_ArrayProtocolP"
 - !private "s23_BidirectionalIndexableP"
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -614,7 +714,9 @@ depends-nominal:
 - !private "s10_IndexableP"
 - !private "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
 - !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
