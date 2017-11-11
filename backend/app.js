@@ -42,6 +42,7 @@ app.use(session({
 }));
 
 app.post('/signup', function(req, res) {
+    var gentype="";
   if (!req.body.username || !req.body.password) {
     res.json({
       success: false,
@@ -49,17 +50,19 @@ app.post('/signup', function(req, res) {
     });
   } else {
     if(req.body.type === "mentor"){
+    gentype="mentor";
     var newUser = new User({
       username: req.body.username,
       password: req.body.password,
-      type:"mentor"
+      type:gentype
     });
     }
     else{
+      gentype="school";
       var newUser = new User({
         username: req.body.username,
         password: req.body.password,
-        type:"school"
+        type:gentype
       });
     }
     // save the user
@@ -70,8 +73,57 @@ app.post('/signup', function(req, res) {
           msg: 'Username already exists.'
         });
       }
-      res.json({
+      f
 
+        if(gentype==="mentor"){
+          var newmentor= new mentor({
+            user:req.body.username,
+            first:req.body.first,
+            last:req.body.last,
+            age:req.body.age,
+            city:req.body.city,
+            phone:req.body.phone,
+            description: req.body.description,
+            company:req.body.company
+
+          })
+          newmentor.save(function(err) {
+            if (err) {
+               res.json({
+                success: false,
+                msg: 'there was an error'
+              });
+            }
+            res.json({
+              success: true,
+              msg: 'message sent'
+            });
+          });
+
+        }
+        else{
+          var newSchool = new School({
+            user: req.body.username,
+            name: req.body.name,
+            address: req.body.address,
+            zipCode: req.body.zip,
+            city:req.body.city,
+            phoneNumber: req.body.phone
+          })
+          newSchool.save(function(err) {
+            if (err) {
+               res.json({
+                success: false,
+                msg: 'there was an error'
+              });
+            }
+            res.json({
+              success: true,
+              msg: 'message sent'
+            });
+          });
+        }
+      res.json({
         success: true,
         msg: 'Successful created new user.'
       });
@@ -133,7 +185,31 @@ app.post('/signin', function(req, res) {
 });
 
 app.post('/search',function(req,res){
-
+  if(req.body.type==="mentor"){
+    School.search(req.body.field,function(err,results){
+      if(err)
+        return res.json({
+          success:false,
+          msg:"nothing was found"
+        })
+      return res.json({
+        success:true,
+        data:results
+      })
+    })
+  } else  {
+    mentor.search(req.body.field,function(err,results){
+      if(err)
+        return res.json({
+          success:false,
+          msg:"nothing was found"
+        })
+      return res.json({
+        success:true,
+        data:results
+      })
+    })
+  }
 })
 
 
@@ -148,7 +224,7 @@ app.post('/getmessage',function(req,res){
   message.find({
     user:req.body.user
   },function(err,messages){
-    if(err) return res.json('no messages')
+    if(err) return res.json({msg:'no messages'})
     else {
       res.json({succes:true,
       data: messages})

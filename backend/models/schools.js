@@ -7,6 +7,7 @@ var schoolSchema =  new Schema({
   name: String,
   address: String,
   zipCode: String,
+  city:String,
   phoneNumber: String
 });
 schoolSchema.plugin(searchable);

@@ -6,8 +6,11 @@ var mentorSchema = new Schema({
   user:String,
   first:String,
   last:String,
+  age:Number,
   city:String,
   phone:String,
+  description: String,
+  company:String
 
 
 });
