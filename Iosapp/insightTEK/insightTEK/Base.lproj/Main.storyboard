@@ -95,21 +95,33 @@
             </objects>
             <point key="canvasLocation" x="-586" y="141"/>
         </scene>
-        <!--Item 1-->
+        <!--Home View Controller-->
         <scene sceneID="py1-nk-J7f">
             <objects>
-                <viewController id="UOU-fH-MJP" sceneMemberID="viewController">
+                <viewController id="UOU-fH-MJP" customClass="HomeViewController" customModule="insightTEK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dmY-Cg-yai">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jko-CC-Kue">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jko-CC-Kue" firstAttribute="top" secondItem="C6O-QH-SgH" secondAttribute="top" id="30z-l7-LkO"/>
+                            <constraint firstItem="C6O-QH-SgH" firstAttribute="trailing" secondItem="jko-CC-Kue" secondAttribute="trailing" id="Blv-Ry-rP7"/>
+                            <constraint firstItem="C6O-QH-SgH" firstAttribute="bottom" secondItem="jko-CC-Kue" secondAttribute="bottom" id="EY8-xq-JLG"/>
+                            <constraint firstItem="jko-CC-Kue" firstAttribute="leading" secondItem="C6O-QH-SgH" secondAttribute="leading" id="Y52-fe-mFL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="C6O-QH-SgH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="WM1-5F-fIa"/>
+                    <navigationItem key="navigationItem" id="FMn-qQ-bz4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="goX-EA-HIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1522" y="-1200"/>
+            <point key="canvasLocation" x="-721" y="-1223"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MJy-b2-fSe">
@@ -121,7 +133,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="UOU-fH-MJP" kind="relationship" relationship="viewControllers" id="lZL-96-6Xq"/>
+                        <segue destination="XwD-B5-2wv" kind="relationship" relationship="viewControllers" id="lZL-96-6Xq"/>
                         <segue destination="oJb-OS-jro" kind="relationship" relationship="viewControllers" id="j4l-wY-VdX"/>
                         <segue destination="SsM-Hq-X0h" kind="relationship" relationship="viewControllers" id="H4L-xc-5cV"/>
                     </connections>
@@ -167,6 +179,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Bk-vF-VxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1425" y="-538"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="dBr-Jr-I3Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XwD-B5-2wv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="WM1-5F-fIa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kEM-OF-EcP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UOU-fH-MJP" kind="relationship" relationship="rootViewController" id="3dI-yi-7oY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwL-Mq-UMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1523.2" y="-1200.8995502248877"/>
         </scene>
     </scenes>
 </document>
