@@ -45,7 +45,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func loadResults() {
-        if userType == "school" {
+        print(userType)
+        if userType == "mentor" {
             let mentorEndPoint = "http://localhost:8080"
             let parameters = ["type":"mentor","field":""]
             mentor.getMentor(APIEndPoint: mentorEndPoint, parameters: parameters, completion: { (mentors) in
