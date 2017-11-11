@@ -73,7 +73,6 @@ app.post('/signup', function(req, res) {
           msg: 'Username already exists.'
         });
       }
-      f
 
         if(gentype==="mentor"){
           var newmentor= new mentor({
@@ -94,10 +93,6 @@ app.post('/signup', function(req, res) {
                 msg: 'there was an error'
               });
             }
-            res.json({
-              success: true,
-              msg: 'message sent'
-            });
           });
 
         }
@@ -117,10 +112,6 @@ app.post('/signup', function(req, res) {
                 msg: 'there was an error'
               });
             }
-            res.json({
-              success: true,
-              msg: 'message sent'
-            });
           });
         }
       res.json({
