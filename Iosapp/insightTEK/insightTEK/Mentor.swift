@@ -10,14 +10,14 @@ import Foundation
 
 class Mentor {
     
-    let mentorId: Int
+    let mentorId: String
     let mentorName: String
     let mentorAge: Int
     let mentorType: String
     let mentorCompany: String
     let mentorDescription: String
     
-    init(mentorId: Int, mentorName: String, mentorAge: Int, mentorType: String,
+    init(mentorId: String, mentorName: String, mentorAge: Int, mentorType: String,
          mentorCompany: String, mentorDescription: String) {
         self.mentorId = mentorId
         self.mentorName = mentorName

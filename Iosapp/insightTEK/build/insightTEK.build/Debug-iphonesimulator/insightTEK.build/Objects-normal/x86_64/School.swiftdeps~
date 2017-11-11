@@ -1,29 +1,11 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "Mentor"
 provides-nominal:
-- "10insightTEK6MentorC"
 provides-member:
-- ["10insightTEK6MentorC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AssignmentPrecedence"
-- "Int"
-- "Mentor"
-- "String"
 depends-member:
-- ["10insightTEK6MentorC", "Int"]
-- ["10insightTEK6MentorC", "String"]
-- ["10insightTEK6MentorC", "deinit"]
-- ["10insightTEK6MentorC", "init"]
-- ["10insightTEK6MentorC", "mentorAge"]
-- ["10insightTEK6MentorC", "mentorCompany"]
-- ["10insightTEK6MentorC", "mentorDescription"]
-- ["10insightTEK6MentorC", "mentorId"]
-- ["10insightTEK6MentorC", "mentorName"]
-- ["10insightTEK6MentorC", "mentorType"]
 depends-nominal:
-- "10insightTEK6MentorC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -49,4 +31,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "c727e533bdbfaf66dd65434c72b7f876"
+interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"

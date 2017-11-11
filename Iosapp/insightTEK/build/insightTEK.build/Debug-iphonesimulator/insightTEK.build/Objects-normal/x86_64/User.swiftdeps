@@ -1,29 +1,20 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "Mentor"
+- "User"
 provides-nominal:
-- "10insightTEK6MentorC"
+- "10insightTEK4UserC"
 provides-member:
-- ["10insightTEK6MentorC", ""]
+- ["10insightTEK4UserC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AssignmentPrecedence"
-- "Int"
-- "Mentor"
-- "String"
+- "User"
 depends-member:
-- ["10insightTEK6MentorC", "Int"]
-- ["10insightTEK6MentorC", "String"]
-- ["10insightTEK6MentorC", "deinit"]
-- ["10insightTEK6MentorC", "init"]
-- ["10insightTEK6MentorC", "mentorAge"]
-- ["10insightTEK6MentorC", "mentorCompany"]
-- ["10insightTEK6MentorC", "mentorDescription"]
-- ["10insightTEK6MentorC", "mentorId"]
-- ["10insightTEK6MentorC", "mentorName"]
-- ["10insightTEK6MentorC", "mentorType"]
+- ["10insightTEK4UserC", "User"]
+- ["10insightTEK4UserC", "deinit"]
+- ["10insightTEK4UserC", "init"]
+- ["10insightTEK4UserC", "sharedInstance"]
 depends-nominal:
-- "10insightTEK6MentorC"
+- "10insightTEK4UserC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -49,4 +40,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "c727e533bdbfaf66dd65434c72b7f876"
+interface-hash: "0375136d27eb16b993635f3ece3c35ee"

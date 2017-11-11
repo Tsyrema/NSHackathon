@@ -10,18 +10,71 @@ import UIKit
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
-    @IBOutlet var mentorTableView: UITableView!
+    @IBOutlet var resultsTableView: UITableView!
+    
     let searchBar = UISearchBar()
-    var mentors: [String] = []
+    var userType: String = ""
+    var mentors: [Mentor] = []
+    var schools: [School] = []
+    var searchedMentors: [Mentor] = []
+    var searchedSchools: [School] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        mentorTableView.dataSource = self
-        mentorTableView.delegate = self
-        
-        // Do any additional setup after loading the view.
+        resultsTableView.dataSource = self
+        resultsTableView.delegate = self
+        createSearchBar()
+
     }
+    
+    func createSearchBar() {
+        searchBar.delegate = self
+        self.navigationItem.titleView = searchBar
+        searchBar.showsCancelButton = false
+        searchBar.placeholder = "Enter Text..."
+     
+    }
+    
+    func loadResults() {
+        if userType == "Mentor" {
+            
+        }
+        else {
+            
+        }
+    }
+    
+    @IBAction func dismissViewOnTap(_ sender: UITapGestureRecognizer) {
+        searchBar.resignFirstResponder()
+        searchedMentors.removeAll()
+        searchedSchools.removeAll()
+        
+        if let searchText = searchBar.text {
+            let keywordsArr = searchText.lowercased().components(separatedBy: " ")
+            
+            if userType == "Mentor" {
+                
+                
+                
+            }
+            else {
+                
+            }
+        }
+        
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        
+    }
+
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
