@@ -17,11 +17,11 @@ depends-member:
 - ["10insightTEK6MentorC", "deinit"]
 - ["10insightTEK6MentorC", "init"]
 - ["10insightTEK6MentorC", "mentorAge"]
+- ["10insightTEK6MentorC", "mentorCity"]
 - ["10insightTEK6MentorC", "mentorCompany"]
 - ["10insightTEK6MentorC", "mentorDescription"]
 - ["10insightTEK6MentorC", "mentorId"]
 - ["10insightTEK6MentorC", "mentorName"]
-- ["10insightTEK6MentorC", "mentorType"]
 depends-nominal:
 - "10insightTEK6MentorC"
 depends-dynamic-lookup:
@@ -49,4 +49,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "c727e533bdbfaf66dd65434c72b7f876"
+interface-hash: "4ef7c4565d51eaccca8c866743c9fa91"

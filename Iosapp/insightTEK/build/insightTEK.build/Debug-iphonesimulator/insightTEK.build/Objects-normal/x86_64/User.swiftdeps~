@@ -7,15 +7,12 @@ provides-member:
 - ["10insightTEK4UserC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AssignmentPrecedence"
-- "String"
 - "User"
 depends-member:
-- ["10insightTEK4UserC", "String"]
+- ["10insightTEK4UserC", "User"]
 - ["10insightTEK4UserC", "deinit"]
 - ["10insightTEK4UserC", "init"]
-- ["10insightTEK4UserC", "userType"]
-- ["10insightTEK4UserC", "username"]
+- ["10insightTEK4UserC", "sharedInstance"]
 depends-nominal:
 - "10insightTEK4UserC"
 depends-dynamic-lookup:
@@ -43,4 +40,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "62787468b11e0259a7c3864a1f90780e"
+interface-hash: "0375136d27eb16b993635f3ece3c35ee"

@@ -1,23 +1,11 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "User"
 provides-nominal:
-- "10insightTEK4UserC"
 provides-member:
-- ["10insightTEK4UserC", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AssignmentPrecedence"
-- "String"
-- "User"
 depends-member:
-- ["10insightTEK4UserC", "String"]
-- ["10insightTEK4UserC", "deinit"]
-- ["10insightTEK4UserC", "init"]
-- ["10insightTEK4UserC", "userType"]
-- ["10insightTEK4UserC", "username"]
 depends-nominal:
-- "10insightTEK4UserC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -43,4 +31,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "60afdffeb8412aee3ebbaf2e52e699f8"
+interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
