@@ -9,7 +9,7 @@
 import UIKit
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-
+    
     @IBOutlet var resultsTableView: UITableView!
     
     let searchBar = UISearchBar()
@@ -19,14 +19,21 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var searchedMentors: [Mentor] = []
     var searchedSchools: [School] = []
     
+    let mentor = MentorStore()
+    let school = SchoolStore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         resultsTableView.dataSource = self
         resultsTableView.delegate = self
         createSearchBar()
-
+        loadResults()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     func createSearchBar() {
@@ -34,15 +41,28 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.navigationItem.titleView = searchBar
         searchBar.showsCancelButton = false
         searchBar.placeholder = "Enter Text..."
-     
+        
     }
     
     func loadResults() {
-        if userType == "Mentor" {
+        print(userType)
+        if userType == "school" {
+            let mentorEndPoint = "http://localhost:8080"
+            let parameters = ["type":"mentor","field":""]
+            mentor.getMentor(APIEndPoint: mentorEndPoint, parameters: parameters, completion: { (mentors) in
+                self.mentors = mentors
+                self.resultsTableView.reloadData()
+            })
+        
             
         }
         else {
-            
+            let schoolEndPoint = "http://localhost:8080"
+            let parameters = ["type":"school","field":""]
+            school.getSchools(APIEndPoint: schoolEndPoint, parameters: parameters, completion: { (schools) in
+                self.schools = schools
+                self.resultsTableView.reloadData()
+            })
         }
     }
     
@@ -74,28 +94,43 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         searchBar.resignFirstResponder()
         
     }
-
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mentors.count
+        if userType == "mentor" {
+            return schools.count
+        }
+        else {
+            return mentors.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cell = resultsTableView.dequeueReusableCell(withIdentifier: "resultCell") as! UITableViewCell
+        if userType == "mentor" {
+            let result = schools[indexPath.row]
+            cell.textLabel?.text = result.schoolName
+        }
+        else {
+            let result = mentors[indexPath.row]
+            cell.textLabel?.text = result.mentorName
+        }
+        return cell
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
