@@ -206,7 +206,7 @@ SWIFT_CLASS("_TtC10insightTEK11AppDelegate")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10insightTEK20SearchViewController")
-@interface SearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface SearchViewController : UIViewController <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified mentorTableView;
 - (void)viewDidLoad;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
