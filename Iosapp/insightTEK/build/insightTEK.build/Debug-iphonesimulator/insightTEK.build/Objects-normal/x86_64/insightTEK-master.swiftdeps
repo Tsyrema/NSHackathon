@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "8bafb30ff57b162f190924d7905d85b1"
-build_time: [1510402741, 374681000]
+build_time: [1510404507, 309354000]
 inputs:
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/Mentor.swift": [1510384764, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SchoolStore.swift": [1510402375, 0]
@@ -11,4 +11,4 @@ inputs:
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/School.swift": [1510401805, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/UserStore.swift": [1510401547, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SigninViewController.swift": [1510398615, 0]
-  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/HomeViewController.swift": [1510396262, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/HomeViewController.swift": [1510404506, 0]
