@@ -29,7 +29,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         resultsTableView.delegate = self
         createSearchBar()
         loadResults()
-        print(userType)
         
     }
     
@@ -46,22 +45,23 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func loadResults() {
-        if userType == "Mentor" {
-            let MentorEndPoint = "http://localhost:8080"
-            let parameters = ["type":"school","field":""]
-            
-            mentor.getMentor(APIEndPoint: MentorEndPoint, parameters: parameters, completion: { (mentors) in
-                
-                print(mentors)
+        print(userType)
+        if userType == "school" {
+            let mentorEndPoint = "http://localhost:8080"
+            let parameters = ["type":"mentor","field":""]
+            mentor.getMentor(APIEndPoint: mentorEndPoint, parameters: parameters, completion: { (mentors) in
+                self.mentors = mentors
                 self.resultsTableView.reloadData()
-            } )
+            })
+        
+            
         }
         else {
             let schoolEndPoint = "http://localhost:8080"
-            let parameters = ["type":"mentor","field":""]
-            
+            let parameters = ["type":"school","field":""]
             school.getSchools(APIEndPoint: schoolEndPoint, parameters: parameters, completion: { (schools) in
-            
+                self.schools = schools
+                self.resultsTableView.reloadData()
             })
         }
     }
@@ -102,11 +102,26 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mentors.count
+        if userType == "mentor" {
+            return schools.count
+        }
+        else {
+            return mentors.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cell = resultsTableView.dequeueReusableCell(withIdentifier: "resultCell") as! UITableViewCell
+        if userType == "mentor" {
+            let result = schools[indexPath.row]
+            cell.textLabel?.text = result.schoolName
+        }
+        else {
+            let result = mentors[indexPath.row]
+            cell.textLabel?.text = result.mentorName
+        }
+        return cell
     }
     /*
      // MARK: - Navigation

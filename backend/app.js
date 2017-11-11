@@ -179,24 +179,26 @@ app.post('/signin', function(req, res) {
 
 app.post('/search',function(req,res){
   if(req.body.type==="mentor"){
-    School.search(req.body.field,function(err,results){
-      if(err)
-        return res.json({
-          success:false,
-          msg:"nothing was found"
-        })
-      return res.json({
-        success:true,
-        data:results
-      })
-    })
-  } else  {
     mentor.search(req.body.field,function(err,results){
       if(err)
         return res.json({
           success:false,
           msg:"nothing was found"
         })
+
+      return res.json({
+        success:true,
+        data:results
+      })
+    })
+  } else  {
+    School.search(req.body.field,function(err,results){
+      if(err)
+        return res.json({
+          success:false,
+          msg:"nothing was found"
+        })
+      
       return res.json({
         success:true,
         data:results

@@ -11,12 +11,6 @@ import Foundation
 class UserStore {
     
     var User: User?
-    
-    
-    
-    
-    
-    
-    
+
     
 }
