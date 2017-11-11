@@ -185,6 +185,7 @@ app.post('/search',function(req,res){
           success:false,
           msg:"nothing was found"
         })
+      console.log('mentor type, will renturn schools');
       return res.json({
         success:true,
         data:results
@@ -197,6 +198,7 @@ app.post('/search',function(req,res){
           success:false,
           msg:"nothing was found"
         })
+        console.log('school type, will renturn mentor');
       return res.json({
         success:true,
         data:results
