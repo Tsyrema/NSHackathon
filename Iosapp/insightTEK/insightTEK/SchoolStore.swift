@@ -28,7 +28,6 @@ class SchoolStore {
                         
                         let schoolObject = School(schoolId: schoolId, schoolName: schoolName, schoolCity: schoolCity, schoolZip: schoolZip)
                         schools.append(schoolObject)
-                        print(schoolObject)
                     }
                 }
             }

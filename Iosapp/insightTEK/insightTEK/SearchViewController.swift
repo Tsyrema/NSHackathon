@@ -29,7 +29,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         resultsTableView.delegate = self
         createSearchBar()
         loadResults()
-        print(userType)
         
     }
     
@@ -46,23 +45,22 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func loadResults() {
-        if userType == "Mentor" {
-            let MentorEndPoint = "http://localhost:8080"
-            let parameters = ["type":"school","field":""]
+        if userType == "school" {
+            let mentorEndPoint = "http://localhost:8080"
+            let parameters = ["type":"mentor","field":""]
+            mentor.getMentor(APIEndPoint: mentorEndPoint, parameters: parameters, completion: { (mentors) in
+                dump(mentors)
+            })
+        
             
-            mentor.getMentor(APIEndPoint: MentorEndPoint, parameters: parameters, completion: { (mentors) in
-                
-                print(mentors)
-                self.resultsTableView.reloadData()
-            } )
         }
         else {
             let schoolEndPoint = "http://localhost:8080"
-            let parameters = ["type":"mentor","field":""]
-            
+            let parameters = ["type":"school","field":""]
             school.getSchools(APIEndPoint: schoolEndPoint, parameters: parameters, completion: { (schools) in
-            
             })
+         
+            
         }
     }
     

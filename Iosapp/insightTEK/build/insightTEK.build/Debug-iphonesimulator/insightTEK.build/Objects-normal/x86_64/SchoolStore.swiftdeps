@@ -17,7 +17,6 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "URL"
 - "Void"
-- !private "print"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["s23BidirectionalCollectionP", "append"]
@@ -116,7 +115,6 @@ depends-member:
 - ["10insightTEK11SchoolStoreC", "deinit"]
 - ["10insightTEK11SchoolStoreC", "getSchools"]
 - ["10insightTEK11SchoolStoreC", "init"]
-- !private ["10insightTEK11SchoolStoreC", "print"]
 - !private ["s8SequenceP", "append"]
 - !private ["s8SequenceP", "dictionaryObject"]
 - !private ["s8SequenceP", "init"]

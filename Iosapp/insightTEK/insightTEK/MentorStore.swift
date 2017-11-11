@@ -21,6 +21,7 @@ class MentorStore {
                 let dict = try? JSON(data: jsonData).dictionaryObject,
                 let mentorsArr = dict!["data"] as? [AnyObject]  {
                 for mentorDict in mentorsArr {
+                    print(mentorDict["user"])
                     if let mentorId = mentorDict["user"] as? String,
                         let mentorName = mentorDict["first"] as? String,
                         let mentorAge = mentorDict["age"] as? Int,
@@ -30,7 +31,9 @@ class MentorStore {
                         
                         let mentorObject = Mentor(mentorId: mentorId, mentorName: mentorName, mentorAge: mentorAge, mentorCity: mentorCity, mentorCompany: mentorCompany, mentorDescription: mentorDescription)
                         mentors.append(mentorObject)
+                         //print(mentorObject)
                     }
+                   
                 }
             }
         }

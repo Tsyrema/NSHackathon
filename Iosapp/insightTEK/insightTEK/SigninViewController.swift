@@ -23,7 +23,7 @@ class SigninViewController: UIViewController {
         let signinEndPoint = "http://localhost:8080"
         if let username = emailTextField.text, let password = passwordTextField.text {
             login(username: username, password: password, APIEndPoint: signinEndPoint, completion: { (user) in
-                dump(user)
+        
             })
         }
     }
@@ -55,7 +55,6 @@ class SigninViewController: UIViewController {
                 if let success = dict!["success"] as? Bool {
                     if success == true {
                         if let userDict = dict!["data"] as? [String:Any] {
-                            print(userDict)
                             if let username = userDict["user"] as? String,
                                 let userType = dict!["type"] as? String {
                                 user = User(username: username, userType: userType)
