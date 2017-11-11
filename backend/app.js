@@ -24,6 +24,7 @@ app.use(function (req, res, next) {
     next();
 });
 //sessions
+mongoose.connect('mongodb://root:abc123@ds157325.mlab.com:57325/insighthack');
 app.use(session({
     secret: 'nsHacks2017', // session secret
     resave: true,
@@ -87,12 +88,30 @@ app.post('/signin', function(req, res) {
           // if user is found and password is right create a token
           var token = jwt.sign(user, config.secret);
           // return the information including token as JSON
-
-          res.json({
-            success: true,
-            token: 'JWT ' + token,
-
-          });
+          if(user.type==="school"){
+            School.findOne({
+              user:user.username
+            },function(err,school){
+              if(err) res.json('error')
+              else
+              res.json({
+                success: true,
+                data: school
+              });
+            });
+          }
+          else{
+            mentor.findOne({
+              user:user.username
+            },function(err,mentor){
+              if(err) res.json('error')
+              else
+              res.json({
+                success: true,
+                data:mentor
+              });
+            })
+          }
         } else {
           console.log('wrong pass')
           res.status(401).send({
@@ -104,6 +123,7 @@ app.post('/signin', function(req, res) {
     }
   });
 });
+
 
 
 
