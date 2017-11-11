@@ -1,10 +1,14 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
-options: "f257de8e896b32e1538b9e04654cec50"
-build_time: [1510381490, 244174000]
+options: "8bafb30ff57b162f190924d7905d85b1"
+build_time: [1510396311, 709047000]
 inputs:
-  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/Mentor.swift": [1510373310, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/Mentor.swift": [1510384764, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SchoolStore.swift": [1510396031, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/AppDelegate.swift": [1510368769, 0]
-  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/User.swift": [1510381489, 0]
-  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SearchViewController.swift": [1510380117, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/User.swift": [1510382497, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/MentorStore.swift": [1510395555, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SearchViewController.swift": [1510395749, 0]
   "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/School.swift": [1510373310, 0]
-  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SigninViewController.swift": [1510380117, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/UserStore.swift": [1510385922, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/SigninViewController.swift": [1510394996, 0]
+  "/Users/Shashi/Projects/NSHackathon/Iosapp/insightTEK/insightTEK/HomeViewController.swift": [9223372036, 854775807]

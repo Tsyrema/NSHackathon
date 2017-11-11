@@ -201,16 +201,28 @@ SWIFT_CLASS("_TtC10insightTEK11AppDelegate")
 @end
 
 @class UITableView;
-@class UITapGestureRecognizer;
-@class UISearchBar;
 @class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC10insightTEK18HomeViewController")
+@interface HomeViewController : UIViewController <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
+- (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITapGestureRecognizer;
+@class UISearchBar;
 
 SWIFT_CLASS("_TtC10insightTEK20SearchViewController")
 @interface SearchViewController : UIViewController <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified resultsTableView;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (IBAction)dismissViewOnTap:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
 - (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
@@ -230,6 +242,7 @@ SWIFT_CLASS("_TtC10insightTEK20SigninViewController")
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified passwordTextField;
 - (void)viewDidLoad;
 - (IBAction)signinTapped:(UIButton * _Nonnull)sender;
+- (IBAction)tapToDismiss:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

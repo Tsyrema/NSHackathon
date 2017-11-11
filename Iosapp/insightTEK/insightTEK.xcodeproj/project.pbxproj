@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		719C602E14BC3E178FEF0F28 /* Pods_insightTEK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029D18B42E2CB446D5E399B8 /* Pods_insightTEK.framework */; };
 		9B0F71D41FB69D810068FCB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71D31FB69D810068FCB5 /* AppDelegate.swift */; };
 		9B0F71D91FB69D810068FCB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F71D71FB69D810068FCB5 /* Main.storyboard */; };
 		9B0F71DB1FB69D810068FCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0F71DA1FB69D810068FCB5 /* Assets.xcassets */; };
@@ -20,9 +21,16 @@
 		9B0F71EC1FB6AD380068FCB5 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71EB1FB6AD380068FCB5 /* School.swift */; };
 		9B0F71EE1FB6AF6E0068FCB5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71ED1FB6AF6E0068FCB5 /* User.swift */; };
 
+		9B0F71F01FB6D5330068FCB5 /* MentorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71EF1FB6D5330068FCB5 /* MentorStore.swift */; };
+		9B0F71F21FB6DD7E0068FCB5 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71F11FB6DD7E0068FCB5 /* UserStore.swift */; };
+		9B0F71F41FB704C60068FCB5 /* SchoolStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F71F31FB704C60068FCB5 /* SchoolStore.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		029D18B42E2CB446D5E399B8 /* Pods_insightTEK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_insightTEK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		586784F2509D5A1567B5CDE1 /* Pods-insightTEK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insightTEK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-insightTEK/Pods-insightTEK.debug.xcconfig"; sourceTree = "<group>"; };
+		72191E51CDB8A0E24E5E69C8 /* Pods-insightTEK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insightTEK.release.xcconfig"; path = "Pods/Target Support Files/Pods-insightTEK/Pods-insightTEK.release.xcconfig"; sourceTree = "<group>"; };
 		9B0F71D01FB69D810068FCB5 /* insightTEK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insightTEK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0F71D31FB69D810068FCB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B0F71D81FB69D810068FCB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +46,10 @@
 		9B0F71EB1FB6AD380068FCB5 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		9B0F71ED1FB6AF6E0068FCB5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 
+		9B0F71EF1FB6D5330068FCB5 /* MentorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorStore.swift; sourceTree = "<group>"; };
+		9B0F71F11FB6DD7E0068FCB5 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		9B0F71F31FB704C60068FCB5 /* SchoolStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolStore.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719C602E14BC3E178FEF0F28 /* Pods_insightTEK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC6BA5AAD14E53354BFECF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				586784F2509D5A1567B5CDE1 /* Pods-insightTEK.debug.xcconfig */,
+				72191E51CDB8A0E24E5E69C8 /* Pods-insightTEK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49BFE973EF039BA94A4EED35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				029D18B42E2CB446D5E399B8 /* Pods_insightTEK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B0F71C71FB69D810068FCB5 = {
 			isa = PBXGroup;
 			children = (
 				9B0F71D21FB69D810068FCB5 /* insightTEK */,
 				9B0F71D11FB69D810068FCB5 /* Products */,
+				0FC6BA5AAD14E53354BFECF6 /* Pods */,
+				49BFE973EF039BA94A4EED35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,10 +106,13 @@
 				9B0F71D71FB69D810068FCB5 /* Main.storyboard */,
 				E6025A801FB6A6F800A76EE1 /* HomeViewController.swift */,
 				9B0F71E71FB69FAE0068FCB5 /* SearchViewController.swift */,
+				9B0F71F11FB6DD7E0068FCB5 /* UserStore.swift */,
+				9B0F71F31FB704C60068FCB5 /* SchoolStore.swift */,
 				9B0F71ED1FB6AF6E0068FCB5 /* User.swift */,
 				9B0F71E91FB6A7E70068FCB5 /* Mentor.swift */,
 				9B0F71EB1FB6AD380068FCB5 /* School.swift */,
 				9B0F71E51FB69E440068FCB5 /* SigninViewController.swift */,
+				9B0F71EF1FB6D5330068FCB5 /* MentorStore.swift */,
 				9B0F71DA1FB69D810068FCB5 /* Assets.xcassets */,
 				9B0F71DC1FB69D810068FCB5 /* LaunchScreen.storyboard */,
 				9B0F71DF1FB69D810068FCB5 /* Info.plist */,
@@ -92,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B0F71E21FB69D810068FCB5 /* Build configuration list for PBXNativeTarget "insightTEK" */;
 			buildPhases = (
+				D33A0352336E8F6C01354BAF /* [CP] Check Pods Manifest.lock */,
 				9B0F71CC1FB69D810068FCB5 /* Sources */,
 				9B0F71CD1FB69D810068FCB5 /* Frameworks */,
 				9B0F71CE1FB69D810068FCB5 /* Resources */,
+				E2B23CF3A14EB4F0ACE10F23 /* [CP] Embed Pods Frameworks */,
+				5DD89D7EA57A4C92F8EFC1CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,16 +190,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DD89D7EA57A4C92F8EFC1CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-insightTEK/Pods-insightTEK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D33A0352336E8F6C01354BAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B23CF3A14EB4F0ACE10F23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-insightTEK/Pods-insightTEK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B0F71CC1FB69D810068FCB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9B0F71EA1FB6A7E70068FCB5 /* Mentor.swift in Sources */,
+				9B0F71F41FB704C60068FCB5 /* SchoolStore.swift in Sources */,
 				9B0F71D41FB69D810068FCB5 /* AppDelegate.swift in Sources */,
 				9B0F71EE1FB6AF6E0068FCB5 /* User.swift in Sources */,
+				9B0F71F01FB6D5330068FCB5 /* MentorStore.swift in Sources */,
 				9B0F71E81FB69FAE0068FCB5 /* SearchViewController.swift in Sources */,
 				9B0F71EC1FB6AD380068FCB5 /* School.swift in Sources */,
+				9B0F71F21FB6DD7E0068FCB5 /* UserStore.swift in Sources */,
 				9B0F71E61FB69E440068FCB5 /* SigninViewController.swift in Sources */,
 				E6025A811FB6A6F800A76EE1 /* HomeViewController.swift in Sources */,
 			);
@@ -298,6 +387,7 @@
 		};
 		9B0F71E31FB69D810068FCB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586784F2509D5A1567B5CDE1 /* Pods-insightTEK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +403,7 @@
 		};
 		9B0F71E41FB69D810068FCB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72191E51CDB8A0E24E5E69C8 /* Pods-insightTEK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
