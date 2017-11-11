@@ -3,11 +3,11 @@ var Schema = mongoose.Schema;
 
 
 var schoolSchema =  new Schema({
-  id: number,
+  user: String,
   name: String,
   address: String,
   zipCode: String,
-  phoneNumber: String,
+  phoneNumber: String
 });
 
 module.exports= mongoose.model('school',schoolSchema);

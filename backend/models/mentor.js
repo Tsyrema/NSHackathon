@@ -2,7 +2,7 @@ var mongoose= require('mongoose');
 var Schema = mongoose.Schema;
 
 var mentorSchema = new Schema({
-  id:number,
+  user:String,
   first:String,
   last:String,
   city:String,
