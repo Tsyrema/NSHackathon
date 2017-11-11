@@ -148,7 +148,8 @@ app.post('/signin', function(req, res) {
               else
               res.json({
                 success: true,
-                data: school
+                data: school,
+                type:"school"
               });
             });
           }
@@ -160,7 +161,8 @@ app.post('/signin', function(req, res) {
               else
               res.json({
                 success: true,
-                data:mentor
+                data:mentor,
+                type:"mentor"
               });
             })
           }
