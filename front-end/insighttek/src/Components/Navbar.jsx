@@ -1,6 +1,10 @@
 import React from 'react';
 import SignInModal from './SignInModal';
+const handleSearch= ()=> {
+    window.location = '/signin';
+  };
 const Navbar = ({isShowingModal,onClick}) => {
+
   return(
   <div>
     <nav className="navbar navbar-toggleable-md navbar-light bg-faded">
@@ -23,10 +27,7 @@ const Navbar = ({isShowingModal,onClick}) => {
         </ul>
         <ul className="secondList">
           <li >
-            <div className="v-link" onClick={onClick}> Sign In</div>
-          </li>
-          <li >
-            <a className="v-link" href="#">Sign Up</a>
+            <div><button className="btn btn-primary" onClick={() => handleSearch() }>Sign in</button></div>
           </li>
         </ul>
       </div>
