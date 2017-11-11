@@ -201,14 +201,19 @@ SWIFT_CLASS("_TtC10insightTEK11AppDelegate")
 @end
 
 @class UITableView;
+@class UITapGestureRecognizer;
+@class UISearchBar;
 @class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10insightTEK20SearchViewController")
-@interface SearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified mentorTableView;
+@interface SearchViewController : UIViewController <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified resultsTableView;
 - (void)viewDidLoad;
+- (IBAction)dismissViewOnTap:(UITapGestureRecognizer * _Nonnull)sender;
+- (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
