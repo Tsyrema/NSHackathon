@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		iUrOp6x3iQhBUJzJBqgrQQl2Cyk=
+		OAFTLP0brfOlJOshdKposy9iWCg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -26,27 +26,27 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-6cT-re-dii.nib</key>
 		<data>
-		SvBkyikR7fMHOpZEwH2ytoDAipg=
+		siHnvcseSsaJsGnSaPpavZyZHXM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UOU-fH-MJP-view-dmY-Cg-yai.nib</key>
 		<data>
-		zTHyBuIN9agyW+HDdTLNjZ3sdr4=
+		GE7IMLBypSB/pJlxQ/O6ygJrAJc=
 		</data>
 		<key>Base.lproj/Main.storyboardc/hTW-wn-GlE-view-aHc-oW-ps1.nib</key>
 		<data>
-		SBeuRGwtcbI3kA1mRI3H8rG9m6E=
+		WtbJfBIikSc2B+x1iERwTC9CamA=
 		</data>
 		<key>Base.lproj/Main.storyboardc/lH0-yM-suD-view-qu3-Xk-uEd.nib</key>
 		<data>
-		GVNtJDD6vCekSG32lDj7rhzttjE=
+		CzegwjxDwV/poPMi9a+mROc+4/c=
 		</data>
 		<key>Base.lproj/Main.storyboardc/searchVC.nib</key>
 		<data>
-		mysReiBG1s+ZF2Qh7jLVuDTG3uI=
+		+5yyZdTPYmVlDMHgsaH4kbBm3ZY=
 		</data>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<data>
-		KtZ6aDi7DU9StBVGnar/U6utHP4=
+		62/9+OD7rtEZZxf7mNSr+vAffxE=
 		</data>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Frameworks/SwiftyJSON.framework/SwiftyJSON</key>
 		<data>
-		+n4Lc8WuyhMeLqzS1lcUGabaocA=
+		lJDzLWhSjj27rPgBsywGKeiHqz4=
 		</data>
 		<key>Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -139,11 +139,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iUrOp6x3iQhBUJzJBqgrQQl2Cyk=
+			OAFTLP0brfOlJOshdKposy9iWCg=
 			</data>
 			<key>hash2</key>
 			<data>
-			6NvB/1H56oJ6ZkN6eYFy4mEoU2pyk0b7SYtDMXbxtJU=
+			AOuqQQPb1cvvajD/z5MMXIckc7A1kzzLSph2E/CKXWE=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -194,66 +194,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SvBkyikR7fMHOpZEwH2ytoDAipg=
+			siHnvcseSsaJsGnSaPpavZyZHXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			2K5NOxDl+pbGMoEogMSi/HZyxBBorJq1RJukVJYaLfs=
+			jKcwDdDONmx38asMDhy8/ZVhzp8TwU6PvhCHQgUT62w=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UOU-fH-MJP-view-dmY-Cg-yai.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zTHyBuIN9agyW+HDdTLNjZ3sdr4=
+			GE7IMLBypSB/pJlxQ/O6ygJrAJc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qnr68KI5RXfmgvPQ11Gcpx28SnP+3w3QOSPPS0vmbBY=
+			bafoO2AXWGuo3aOwwys3YyraStnuGRVIBHjUhMHSGyI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/hTW-wn-GlE-view-aHc-oW-ps1.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SBeuRGwtcbI3kA1mRI3H8rG9m6E=
+			WtbJfBIikSc2B+x1iERwTC9CamA=
 			</data>
 			<key>hash2</key>
 			<data>
-			qyMnGpGAcLerU1dBMu3YJjW+EOk8yPThhjoEICZ9hCw=
+			lRfG7m46D3me0V+fg7mZw2/YIQMYRbTQitjYiDZZAMg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/lH0-yM-suD-view-qu3-Xk-uEd.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GVNtJDD6vCekSG32lDj7rhzttjE=
+			CzegwjxDwV/poPMi9a+mROc+4/c=
 			</data>
 			<key>hash2</key>
 			<data>
-			RyQm9leJIwmZY7Z5HH1VtilEdid3rsX0m7md7H/oseA=
+			NdnpqYofVPtceZhXbM5+UwILYUe0vc7/0qEXW8bqxwk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/searchVC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mysReiBG1s+ZF2Qh7jLVuDTG3uI=
+			+5yyZdTPYmVlDMHgsaH4kbBm3ZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			h9aWB9Xbnt9Aw97u1VqmX9Fg9RzYcvJ9ekEtf6RXQLA=
+			RVtnP3FMXQ7aDsOER310l+ETmtC7x94x/qyYAfCsf/k=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Alamofire</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KtZ6aDi7DU9StBVGnar/U6utHP4=
+			62/9+OD7rtEZZxf7mNSr+vAffxE=
 			</data>
 			<key>hash2</key>
 			<data>
-			uvbgEpYy9h/hGV7LQwNVXa/NE9FllR4lY19y1kUDj6o=
+			NSLQZpt3itK03fKkAdf6oQcpkYcC7q1PnV3kZfDCy0E=
 			</data>
 		</dict>
 		<key>Frameworks/Alamofire.framework/Info.plist</key>
@@ -293,11 +293,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+n4Lc8WuyhMeLqzS1lcUGabaocA=
+			lJDzLWhSjj27rPgBsywGKeiHqz4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Etavdv9PkP7r2wKeh1az9Eax5OZA4NsPhDVp22C00mY=
+			6XpexEsMUenxWEVkRlki3XLp4goCaq/WlF9MesIPiIc=
 			</data>
 		</dict>
 		<key>Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources</key>
