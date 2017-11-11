@@ -10,9 +10,12 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
+    @IBOutlet var homeTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        homeTableView.delegate = self
+        homeTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -23,10 +26,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
         return UITableViewCell()
     }
 
