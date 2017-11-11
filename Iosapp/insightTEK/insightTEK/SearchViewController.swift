@@ -27,6 +27,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         resultsTableView.dataSource = self
         resultsTableView.delegate = self
+        resultsTableView.estimatedRowHeight = 200
+        resultsTableView.rowHeight = UITableViewAutomaticDimension
         createSearchBar()
         loadResults()
         
@@ -110,16 +112,32 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if userType == "mentor" {
+            return 100.0
+        }
+        else {
+            return 150.0
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = resultsTableView.dequeueReusableCell(withIdentifier: "resultCell") as! UITableViewCell
+        let cell = resultsTableView.dequeueReusableCell(withIdentifier: "resultCell") as! ResultTableViewCell
         if userType == "mentor" {
             let result = schools[indexPath.row]
-            cell.textLabel?.text = result.schoolName
+            cell.titleLabel.text = result.schoolName
+            cell.subtitleLabel.text = result.schoolCity
+            cell.mainImageView?.image = UIImage(named: "\(indexPath.row)\(indexPath.row)")
+            cell.mainImageView.layer.cornerRadius = 10.0
         }
         else {
             let result = mentors[indexPath.row]
-            cell.textLabel?.text = result.mentorName
+            cell.titleLabel.text = result.mentorName
+            cell.subtitleLabel.text = result.mentorCompany
+            cell.descrpLabel.text = result.mentorDescription
+            cell.mainImageView?.image = UIImage(named: "\(indexPath.row)")
+            cell.mainImageView.layer.cornerRadius = 10.0
         }
         return cell
     }
